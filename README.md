@@ -1,3 +1,5 @@
+![Kandi CLI Logo](kandi-icon.png)
+
 # Kandi CLI
 
 AI-assisted software development CLI with interactive chat and 26 built-in tools.
