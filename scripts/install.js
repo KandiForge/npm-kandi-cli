@@ -99,8 +99,16 @@ async function install() {
     // Clean up tarball
     fs.unlinkSync(tempFile);
     
+    // Rename binary to avoid conflict with wrapper script
+    const extractedPath = path.join(binDir, 'kandi');
+    const binaryPath = path.join(binDir, 'kandi-bin');
+    
+    // Rename the extracted binary
+    if (fs.existsSync(extractedPath)) {
+      fs.renameSync(extractedPath, binaryPath);
+    }
+    
     // Make binary executable
-    const binaryPath = path.join(binDir, 'kandi');
     fs.chmodSync(binaryPath, 0o755);
     
     console.log('✅ Kandi CLI installed successfully!');
@@ -113,7 +121,7 @@ async function install() {
     // Fallback: Try to use locally built binary if available
     const localBinary = '/Users/admin/kandi-forge/kandi-cli/target/release/kandi';
     const binDir = path.join(__dirname, '..', 'bin');
-    const targetBinary = path.join(binDir, 'kandi');
+    const targetBinary = path.join(binDir, 'kandi-bin');
     
     if (fs.existsSync(localBinary)) {
       console.log('Using local development binary as fallback...');
