@@ -10,7 +10,7 @@ const binaryPath = path.join(__dirname, 'kandi');
 // Check if binary exists
 if (!fs.existsSync(binaryPath)) {
   console.error('Error: Kandi CLI binary not found.');
-  console.error('Please reinstall the package: npm install -g @kandiforge/kandi-cli');
+  console.error('Please reinstall the package: npm install -g kandi-cli');
   process.exit(1);
 }
 
