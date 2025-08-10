@@ -4,13 +4,13 @@
   "description": "AI-assisted software development CLI with interactive chat and 26 built-in tools",
   "author": "KandiForge",
   "license": "Proprietary",
-  "homepage": "https://github.com/KandiForge/kandi-cli-osx",
+  "homepage": "https://github.com/KandiForge/kandi-cli-releases",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KandiForge/kandi-cli-osx.git"
+    "url": "https://github.com/KandiForge/kandi-cli-releases.git"
   },
   "bugs": {
-    "url": "https://github.com/KandiForge/kandi-cli-osx/issues"
+    "url": "https://github.com/KandiForge/kandi-cli-releases/issues"
   },
   "keywords": [
     "ai",

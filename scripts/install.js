@@ -7,7 +7,7 @@ const { execSync } = require('child_process');
 const crypto = require('crypto');
 
 const RELEASE_VERSION = '1.0.2';
-const REPO = 'KandiForge/kandi-cli-osx';
+const REPO = 'KandiForge/kandi-cli-releases';
 
 function getArch() {
   const arch = process.arch;

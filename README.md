@@ -59,11 +59,11 @@ kandi exec-spec /path/to/spec.md
 
 ## Documentation
 
-For detailed documentation and updates, visit: https://github.com/KandiForge/kandi-cli-osx
+For detailed documentation and updates, visit: https://github.com/KandiForge/kandi-cli-releases
 
 ## Support
 
-Report issues at: https://github.com/KandiForge/kandi-cli-osx/issues
+Report issues at: https://github.com/KandiForge/kandi-cli-releases/issues
 
 ## License
 
