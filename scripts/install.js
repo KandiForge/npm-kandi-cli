@@ -99,13 +99,18 @@ async function install() {
     // Clean up tarball
     fs.unlinkSync(tempFile);
     
-    // Rename binary to avoid conflict with wrapper script
-    const extractedPath = path.join(binDir, 'kandi');
+    // The tarball extracts to kandi-cli-v{version}/kandi
+    const extractedDir = path.join(binDir, `kandi-cli-v${RELEASE_VERSION}`);
+    const extractedPath = path.join(extractedDir, 'kandi');
     const binaryPath = path.join(binDir, 'kandi-bin');
     
-    // Rename the extracted binary
+    // Move the extracted binary to the correct location
     if (fs.existsSync(extractedPath)) {
       fs.renameSync(extractedPath, binaryPath);
+      // Clean up the extracted directory
+      fs.rmdirSync(extractedDir);
+    } else {
+      throw new Error(`Binary not found at expected location: ${extractedPath}`);
     }
     
     // Make binary executable
