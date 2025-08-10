@@ -1,0 +1,48 @@
+{
+  "name": "@kandiforge/kandi-cli",
+  "version": "1.0.2",
+  "description": "AI-assisted software development CLI with interactive chat and 26 built-in tools",
+  "author": "KandiForge",
+  "license": "Proprietary",
+  "homepage": "https://github.com/KandiForge/kandi-cli-osx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KandiForge/kandi-cli-osx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KandiForge/kandi-cli-osx/issues"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "development",
+    "assistant",
+    "kandi",
+    "kandiforge",
+    "code-generation",
+    "software-development"
+  ],
+  "bin": {
+    "kandi": "./bin/kandi"
+  },
+  "scripts": {
+    "postinstall": "node scripts/install.js",
+    "test": "echo \"No tests configured\""
+  },
+  "files": [
+    "bin/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
+}
