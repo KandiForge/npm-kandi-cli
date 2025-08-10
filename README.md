@@ -7,13 +7,13 @@ AI-assisted software development CLI with interactive chat and 26 built-in tools
 ## Installation
 
 ```bash
-npm install -g @kandiforge/kandi-cli
+npm install -g kandi-cli
 ```
 
 Or use with npx:
 
 ```bash
-npx @kandiforge/kandi-cli --help
+npx kandi-cli --help
 ```
 
 ## Requirements
